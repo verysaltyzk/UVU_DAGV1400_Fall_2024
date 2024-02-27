@@ -1,0 +1,57 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//this generates the number and asks for the input
+		Random rnd = new Random();
+		int number = rnd.Next(1,10);
+		Console.WriteLine("Please input a number");
+		int v = Convert.ToInt32(Console.ReadLine());
+		while (v != number)
+		{
+			//this is outputting the feedbacl about if the guess is too high or too low
+			if (v < number)
+			{
+			Console.WriteLine("number is too low");
+			}
+			if (v > number)
+			{
+			Console.WriteLine("number is too high");
+			}
+			Console.WriteLine("Please input a number");
+			v = Convert.ToInt32(Console.ReadLine());
+		}
+		//this outputs if you won
+		Console.WriteLine("You guessed the right number, the number is " + number);
+	}
+ }
+
+
+
+
+
+
+// CHALLANGE 2
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		// this gets the inputs and puts it into an array
+		Console.WriteLine("Enter your first favorite food");
+		string first = Console.ReadLine();
+		Console.WriteLine("Enter your second favorite food");
+		string second = Console.ReadLine();
+		Console.WriteLine("Enter your third favorite food");
+		string third = Console.ReadLine();
+		string[] food = {first,second,third};
+	for (int q = 0; q < 3; q++)
+{
+		//this outputs the array
+  Console.WriteLine("my Favorite foods are: " + food[q]);
+  }
+ }
+}
