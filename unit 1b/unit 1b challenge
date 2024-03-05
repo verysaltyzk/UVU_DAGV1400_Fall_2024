@@ -1,0 +1,64 @@
+//this is an enhanced version of a previous assignment, all it adds is feedback on wearing a jacket and gauging ranges
+Console.WriteLine("Please input a temperature in Celsius: ");
+int Temp = Convert.ToInt32(Console.ReadLine());
+if (Temp >= 30 && Temp <= 40)
+{
+    Console.WriteLine("stay hydrated and avoid staying in the sun for too long");
+}
+else if (Temp < 20 && Temp > 10)
+{
+    Console.WriteLine("please enjoy the pleasant weather");
+}
+else if (Temp <= 10 && Temp >= -45)
+{
+    Console.WriteLine("Please wear a jacket");
+}
+
+
+
+
+
+
+//CHALLANGE 2
+
+
+
+
+Console.WriteLine("Please input a test percentage: ");
+int score = Convert.ToInt32(Console.ReadLine());
+//this segment gauges the range of what was inputed and outputs accordingly. it is an enhanced version of a previous assignment
+if (score >= 90 && score <= 100)
+{
+    Console.WriteLine("A");
+}
+else if (score >= 80 && score <= 89)
+{
+    Console.WriteLine("B");
+}
+else if (score >= 70 && score <= 79)
+{
+    Console.WriteLine("C");
+}
+else if (score >= 60 && score <= 69)
+{
+    Console.WriteLine("D");
+}
+else if (score >= 0 && score <= 59)
+{
+    Console.WriteLine("F");
+}
+// this segment uses switch cases to see what the user inputted and give feedback on stuff
+Console.WriteLine("What is your favorite subject: ");
+string subject = Console.ReadLine();
+switch (subject)
+{
+    case "math":
+        Console.WriteLine("Keep practicing and exploring math concepts");
+        break;
+    case "english":
+        Console.WriteLine("Keep practicing and reading long books");
+        break;
+    case "science":
+        Console.WriteLine("Keep practicing and hopefully not blow yourself up");
+        break;
+}
