@@ -1,1 +1,35 @@
-testy
+using System.ComponentModel.Design;
+// this segment gets a user input for temperature and spits out advice accordingly
+Console.WriteLine("Please input a temperature in Celsius: ");
+int Temp = Convert.ToInt32(Console.ReadLine());
+if (Temp > 30)
+{
+    Console.WriteLine("stay hydrated and avoid staying in the sun for too long");
+}
+else
+{
+    Console.WriteLine("please enjoy the pleasant weather");
+}
+// this segment gets an input on a test percentage and grades it. Now included: absolutely 0 judgement from the coder
+Console.WriteLine("Please input a test percentage: ");
+int score = Convert.ToInt32(Console.ReadLine());
+if (score >= 90 && score <= 100)
+{
+    Console.WriteLine("A");
+}
+else if (score >= 80 && score <= 89)
+{
+    Console.WriteLine("B");
+}
+else if (score >= 70 && score <= 79)
+{
+    Console.WriteLine("C");
+}
+else if (score >= 60 && score <= 69)
+{
+    Console.WriteLine("D");
+}
+else if (score >= 0 && score <= 59)
+{
+    Console.WriteLine("F");
+}
